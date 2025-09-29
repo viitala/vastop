@@ -10847,68 +10847,74 @@ section {
 }
 
 /*--Hero/Header--*/
-   .hero-section {
-    background-color: rgb(15, 1, 49);
-    padding: 5rem 0;
-    padding-top: 8rem;
-  }
+.hero-section {
+  background-color: rgb(15, 1, 49);
+  padding: 5rem 0;
+  padding-top: 8rem;
+}
 
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.hero-image {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-light {
+  background-color: white;
+  color: rgb(15, 1, 49);
+  border: none;
+}
+
+.btn-light:hover {
+  background-color: #ff8012;
+  color: white;
+  border: none;
+}
+
+.btn-call {
+  background-color: #ff8012;
+  color: white;
+  border: none;
+}
+
+.btn-call:hover {
+  background-color: white;
+  color: rgb(15, 1, 49);
+  border: none;
+}
+
+@media (max-width: 767.98px) {
   .hero-title {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: white;
+    font-size: 2.5rem;
   }
 
   .hero-description {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: white;
+    font-size: 1rem;
   }
 
   .hero-image {
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin: 2rem auto 0;
   }
 
-  .btn-light {
-    background-color: white;
-    color: rgb(15, 1, 49);
-    border: none;
+  /* Painikkeiden tyyli mobiilinäkymässä */
+  .btn-light, .btn-call {
+    width: 100%; /* Painikkeet täyttävät koko leveyden */
+    margin-left: 0; /* Poistaa margin-left mobiilissa */
+    margin-bottom: 1rem; /* Lisää väliä painikkeiden väliin (yhteensopiva gap-3:n kanssa) */
   }
-
-  .btn-light:hover {
-    background-color: #ff8012;
-    color: white;
-    border: none;
-  }
-
-  .btn-call {
-    background-color: #ff8012;
-    color: white;
-    border: none;
-    margin-left: 1rem;
-  }
-
-  .btn-call:hover {
-    background-color: white;
-    color: rgb(15, 1, 49);
-    border: none;
-  }
-
-  @media (max-width: 767.98px) {
-    .hero-title {
-      font-size: 2.5rem;
-    }
-
-    .hero-description {
-      font-size: 1rem;
-    }
-
-    .hero-image {
-      margin: 2rem auto 0;
-    }
-  }
+}
 
 /*--Marquee--*/
   .marquee-container {
@@ -10962,15 +10968,28 @@ section {
   }
 
 /*--Img section--*/
-   .image-section {
-    background-color: rgb(15, 1, 49);
-    padding: 2rem 0;
+.image-section {
+  background-color: rgb(15, 1, 49);
+  padding: 2rem 0;
+}
+
+.image-section-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 576px) {
+  .image-section-img {
+    max-width: 80%; /* Pienentää kuvien leveyttä mobiilissa */
+    margin: 0 auto; /* Keskittaa kuvat, jos haluat niiden olevan täysin linjassa */
   }
-  .image-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+
+  .image-section .col-4 {
+    padding-left: 5px; /* Vähentää sarakkeiden välistä paddingia */
+    padding-right: 5px;
   }
+}
 
 /*--Contact section--*/
   #contact a {
