@@ -146,6 +146,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
+   font-weight: 600;
 }
 @media (min-width: 1200px) {
   h3, .h3 {
@@ -10990,6 +10991,14 @@ section {
     padding-right: 5px;
   }
 }
+/*--Services section--*/
+.services-section i {
+  transition: color 0.3s ease;
+}
+.services-section i:hover {
+  color: #ff8012; /* Sama kuin btn-call hover */
+}
+
 
 /*--Contact section--*/
   #contact a {
