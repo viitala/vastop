@@ -11010,4 +11010,11 @@ section {
     text-decoration: underline;
   }
 
-
+.footer-link {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .footer-link:hover {
+      color: #ff8012; /* Brändin oranssi, voit muuttaa tarpeen mukaan (esim. #f28c38) */
+      text-decoration: none;
+    }
